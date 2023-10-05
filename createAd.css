@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Основная часть */
+
+main {
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+}
+
+main h2 {
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.ourForm {
+    width: 100%;
+    margin: 0;
+}
+
+h3 {
+    padding: 10px 0px;
+}
+
+
+/* Основные параметры */
+
+.mainParameters {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 100%;
+}
+
+.brand,
+.divModel,
+.generation,
+.yearOfIssue,
+.locationSteering,
+.carBody,
+.numberOfDoors,
+.color {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.brand label {
+    padding-right: 20px;
+}
+
+.brand select {
+    padding: 5px;
+    width: 200px;
+}
+
+.divModel label {
+    padding-right: 20px;
+}
+
+.divModel select {
+    padding: 5px;
+    width: 200px;
+}
+
+.generation label {
+    padding-right: 20px;
+}
+
+.generation select {
+    padding: 5px;
+    width: 200px;
+}
+
+.yearOfIssue label {
+    padding-right: 20px;
+}
+
+.yearOfIssue input {
+    padding: 5px;
+    width: 200px;
+}
+
+.locationSteering label {
+    padding-right: 20px;
+}
+
+.locationSteering select {
+    padding: 5px;
+    width: 230px;
+}
+
+.carBody label {
+    padding-right: 20px;
+}
+
+.carBody select {
+    padding: 5px;
+    width: 230px;
+}
+
+.numberOfDoors label {
+    padding-right: 20px;
+}
+
+.numberOfDoors input {
+    padding: 5px;
+    width: 200px;
+}
+
+.color label {
+    padding-right: 20px;
+}
+
+.color select {
+    padding: 5px;
+    width: 230px;
+}
+
+.priceInput:after {
+    content: " \20BD";
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+/* Основные параметры */
+
+/* Технические параметры */
+
+.technicalSpecifications {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.power,
+.typeEngine,
+.engineVolume,
+.transmission,
+.driveUnit {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.power label {
+    padding-right: 20px;
+}
+
+.power input {
+    padding: 5px;
+    width: 230px;
+}
+
+.typeEngine label {
+    padding-right: 20px;
+}
+
+.typeEngine select {
+    padding: 5px;
+    width: 230px;
+}
+
+.engineVolume label {
+    padding-right: 20px;
+}
+
+.engineVolume input {
+    padding: 5px;
+    width: 230px;
+}
+
+.transmission label {
+    padding-right: 20px;
+}
+
+.transmission select {
+    padding: 5px;
+    width: 280px;
+}
+
+.driveUnit label {
+    padding-right: 20px;
+}
+
+.driveUnit select {
+    padding: 5px;
+    width: 230px;
+}
+
+/* Технические параметры */
+
+/* Состояние и цена */
+
+.conditionAndPrice {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.mileage,
+.condition,
+.numberOfOwners,
+.vin,
+.description,
+.price {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mileage label {
+    padding-right: 20px;
+}
+
+.mileage input {
+    padding: 5px;
+    width: 230px;
+}
+
+.condition label {
+    padding-right: 20px;
+}
+
+.condition select {
+    padding: 5px;
+    width: 290px;
+}
+
+.numberOfOwners label {
+    padding-right: 20px;
+}
+
+.numberOfOwners input {
+    padding: 5px;
+    width: 230px;
+}
+
+.vin label {
+    padding-right: 20px;
+}
+
+.vin input {
+    padding: 5px;
+    width: 230px;
+}
+
+.description label {
+    padding-right: 20px;
+}
+
+.description textarea {
+    padding: 5px;
+    width: 80%;
+    height: 150px;
+}
+
+.price label {
+    padding-right: 20px;
+}
+
+.price input {
+    padding: 5px;
+    width: 230px;
+}
+
+/* Состояние и цена */
+
+.sendAdd {
+    background-color: #2082AC;
+    border: 0px;
+    color: #E1E9ED;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.5s;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.1em;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.sendAdd:hover {
+    background-color: #1A6A8C;
+    color: white;
+}
+
+/* Основная часть */
+
+.input-image {
+    margin: 10px;
+}
+
+.input-image::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.input-image {
+    color: transparent;
+}
+
+.input-image::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.input-image::before {
+    content: 'Выберите изображение';
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #a2c5fd, #88b3f8);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    padding-top: 23px;
+}
+
+.input-image:hover::before {
+    border-color: black;
+}
+
+.input-image:active {
+    outline: 0;
+}
+
+.input-image:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+
+.ready-image {
+    margin: 10px;
+}
+
+.ready-image::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.ready-image {
+    color: transparent;
+}
+
+.ready-image::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.ready-image::before {
+    content: 'Нажмите, чтобы выбрать изображение';
+    color: rgba(0, 0, 0, 0.01);
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10pt;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ready-image:hover::before {
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: 'Нажмите, чтобы выбрать изображение';
+    color: white;
+}
+
+.ready-image:active {
+    outline: 0;
+}
+
+.location select {
+    padding: 5px;
+    width: 250px;
+}

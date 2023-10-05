@@ -1,0 +1,45 @@
+*
+{
+	box-sizing:  border-box;
+}
+html
+{
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+}
+body
+{
+	margin: 0;
+}
+form
+{
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    font-weight: 500;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 10px 50px 50px 50px;
+    background-color: white;
+    color: black;
+}
+.back {
+	cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+	font-size: 1em;
+    color: black;
+}
+
+.back:hover {
+    background-color: #ddd;
+    color: black;
+}
+.mistake
+{
+    padding: 10px;
+    background-color: rgba(250, 0, 0, 0.5);
+    border-radius: 10px;
+}

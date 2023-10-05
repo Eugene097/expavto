@@ -1,0 +1,129 @@
+header
+{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-width: 700px;
+}
+
+.logo
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.img-logo
+{
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+}
+
+.menu
+{
+    font-size: 1.3em;
+    grid-column: 2;
+    margin: auto 50px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.location
+{
+    text-align: left;
+    align-self: end;
+}
+
+.location a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.elemnts-dropdown-menu, .button
+{
+    justify-self: end;
+}
+
+.dropdown-menu
+{
+    width: 250px;
+    text-align: right;
+}
+
+.dropdown-menu button
+{
+    width: 99%;
+}
+
+.dropdown-menu li button
+{
+    font-size: 1.4em;
+}
+
+.dropdown-toggle::before, 
+.dropdown-toggle::after {
+    border: none!important;
+    content: none!important;
+}
+
+.fas
+{
+    font-size: 18px!important;
+}
+
+.registration
+{
+    background-color: #2082AC;
+    border: 0px;
+    color: #E1E9ED;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.5s;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.registration:hover
+{
+    background-color: #1A6A8C;
+    color: white;
+}
+
+.entrance
+{
+    background-color: #2082AC;
+    border: 0px;
+    color: #E1E9ED;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.entrance:hover 
+{
+    background-color: #1A6A8C;
+    color: white;
+}
+
+@media (max-width:1160px) {
+    .logo
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo span
+    {
+        display: inline!important;
+        align-self: flex-end;
+        margin-left: 15px;
+    }
+}
