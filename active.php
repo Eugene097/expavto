@@ -9,5 +9,5 @@
         mysqli_query($link, $query);
         $_SESSION["Token"]=""; //Обнуление токена
     }
-    else $_SESSION['Expire'] = $now + (20 * 60); //Время поледней активности
+    else $_SESSION['Expire'] = $now + (20 * 60);  //Время поледней активности
 ?>
